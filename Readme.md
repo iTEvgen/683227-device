@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгений Аржиловский](https://up.htmlacademy.ru/htmlcss/21/user/683227).
-* Наставник: [Алексей Гурьев] (https://up.htmlacademy.ru/htmlcss/21/user/205403).
+* Наставник: [Алексей Гурьев](https://up.htmlacademy.ru/htmlcss/21/user/205403).
 
 ---
 
