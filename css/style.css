@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../font/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('../font/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../font/gilroylight-webfont.woff2') format('woff2'),
+         url('../font/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-header {
+    margin: 0 auto;
+    width: 1160px;
+    height: 299px;
+    background: rgb(247, 226, 150);
+}
+
+.user-navigation {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.user-navigation li,
+.site-navigation li {
+    list-style: none;
+}
+
+.user-navigation input[type="search"] {
+    font: inherit;
+    border: none;
+    background: rgb(247, 226, 150);
+}
+
+.login-link button {
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.user-navigation a,
+.site-navigation a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.6;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.user-navigation button:hover,
+.user-navigation button:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active,
+.user-navigation button:active,
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation form {
+    font-size: 0;
+}
+
+.user-navigation input[type="search"]{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    opacity: 0.3;
+    width: 357px;
+    height: 48px;
+}
+
+.user-navigation input[type="search"]:hover{
+    opacity: 0.6;
+}
+
+.user-navigation input[type="search"]:focus {
+    opacity: 1.0;
+    width: 357px;
+    height: 48px;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.user-navigation input[type="submit"] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 85px;
+    height: 49px;
+    background: rgb(247, 226, 150);
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.user-navigation input[type="submit"]:hover,
+.user-navigation input[type="submit"]:focus {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.user-navigation input[type="submit"]:active {
+    color: rgba(255, 255, 255, 0.3);
+}
