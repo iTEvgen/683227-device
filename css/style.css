@@ -40,7 +40,8 @@ body {
 }
 
 .user-navigation li,
-.site-navigation li {
+.site-navigation li,
+.popular-products li {
     list-style: none;
 }
 
@@ -87,11 +88,11 @@ body {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation form {
+.form-navigation {
     font-size: 0;
 }
 
-.user-navigation input[type="search"]{
+.form-navigation input.form-search-item{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -101,11 +102,11 @@ body {
     height: 48px;
 }
 
-.user-navigation input[type="search"]:hover{
+.form-navigation .form-search-item:hover{
     opacity: 0.6;
 }
 
-.user-navigation input[type="search"]:focus {
+.form-navigation .form-search-item:focus {
     opacity: 1.0;
     width: 357px;
     height: 48px;
@@ -113,12 +114,11 @@ body {
     border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-.user-navigation input[type="submit"] {
+.form-navigation input.form-submit-item {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
-    text-transform: capitalize;
     width: 85px;
     height: 49px;
     background: rgb(247, 226, 150);
@@ -126,12 +126,71 @@ body {
     border: 2px solid rgb(0, 0, 0);
 }
 
-.user-navigation input[type="submit"]:hover,
-.user-navigation input[type="submit"]:focus {
+.form-navigation .form-submit-item:hover,
+.form-navigation .form-submit-item:focus {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
-.user-navigation input[type="submit"]:active {
+.form-navigation .form-submit-item:active {
     color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.products-list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.products-list p {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    width: 160px;
+}
+
+.products-catalog li {
+    width: 160px;
+}
+
+.products-list div {
+    width: 160px;
+    height: 160px;
+    background: rgb(247, 226,150);
+}
+
+li.products-list:hover div.products-item {
+    background: rgb(240, 197, 46);
+}
+
+li.products-list:active {
+    opacity: 0.3;
+}
+
+.partners img{
+    filter: grayscale(100%);
+    opacity: 0.2;
+}
+
+.partners img:hover {
+    filter: none;
+    opacity: 1.0;
+}
+
+.about h2 {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.about p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: none;
+    color: rgb(70, 70, 70)
 }
