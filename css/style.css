@@ -183,29 +183,6 @@ body {
     background-color: rgb(247, 226,150);
 }
 
-.virtual-reality {
-    background: rgb(247, 226,150) url(../img/popular-1.svg) no-repeat 30px 50px;
-}
-
-.selfie {
-    background: rgb(247, 226,150) url(../img/popular-2.svg) no-repeat 37px 26px;
-}
-
-.action-cameras {
-    background: rgb(247, 226,150) url(../img/popular-3.svg) no-repeat 49px 48px;
-}
-
-.fitness-bracelets {
-    background: rgb(247, 226,150) url(../img/popular-4.svg) no-repeat 27px 52px;
-}
-
-.smart-watch {
-    background: rgb(247, 226,150) url(../img/popular-5.svg) no-repeat 53px 32px;
-}
-
-.quadrocopter {
-    background: rgb(247, 226,150) url(../img/popular-6.svg) no-repeat 15px 52px;
-}
 
 li.products-list:hover div.products-item {
     background-color: rgb(240, 197, 46);
