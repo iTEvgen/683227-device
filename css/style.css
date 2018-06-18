@@ -403,6 +403,7 @@ li.products-list:active {
     margin-left: 10px; 
 }
 
+.pagination-item:first-child,
 .pagination-item:last-child {
     margin-left: 0;
 }
