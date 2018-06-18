@@ -52,7 +52,7 @@ body {
     list-style: none;
 }
 
-.user-navigation input[type="search"] {
+.user-navigation .form-search-text {
     font: inherit;
     border: none;
     background: rgb(247, 226, 150);
@@ -96,52 +96,67 @@ body {
 }
 
 .form-navigation {
-    font-size: 0;
+    position: relative;
+    width: 440px;
+    height: 50px;
 }
 
-.form-navigation input.form-search-item{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
+.form-navigation input.form-search-text{
     opacity: 0.3;
-    width: 357px;
-    height: 48px;
+    width: 100%;
+    height: 32px;
+    padding: 0 120px 0 40px; 
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
 }
 
-.form-navigation .form-search-item:hover{
+.form-navigation .form-search-text:hover{
     opacity: 0.6;
 }
 
-.form-navigation .form-search-item:focus {
+.form-navigation .form-search-text:focus {
     opacity: 1.0;
-    width: 357px;
-    height: 48px;
     outline: none;
     border-bottom: 2px solid rgb(0, 0, 0);
+
 }
 
-.form-navigation input.form-submit-item {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
+.form-navigation input.form-search-submit {
+    position: absolute;
+    top: -17px;
+    right: 0;
     width: 85px;
     height: 49px;
-    background: rgb(247, 226, 150);
+    cursor: pointer;
     outline: none;
+    background: rgb(247, 226, 150);
     border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
-.form-navigation .form-submit-item:hover,
-.form-navigation .form-submit-item:focus {
+.form-navigation .form-search-submit:hover,
+.form-navigation .form-search-submit:focus {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
-.form-navigation .form-submit-item:active {
+.form-navigation .form-search-submit:active {
     color: rgba(255, 255, 255, 0.3);
 }
+
+.form-search-submit {
+    display: none;
+}
+
+.form-search-submit:hover {
+    display: inline;
+}
+
+.form-search-text:focus + .form-search-submit,
+.form-search-text:active + .form-search-submit{
+    display: inline;
+}
+
 
 
 /* Стили главной */
