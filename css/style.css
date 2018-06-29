@@ -16,7 +16,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 20px 0 20px;
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -25,31 +25,52 @@ body {
 }
 
 .main-header {
-    margin: 0 auto;
+    margin: 40px auto 0;
     width: 1160px;
-    height: 299px;
+    min-height: 299px;
     background: rgb(247, 226, 150);
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-header-catalog {
     margin: 0 auto;
     width: 1160px;
-    height: 299px;
+    height: 186px;
     background: rgb(247, 226, 150);
 }
 
 .user-navigation {
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
+}
+
+.site-navigation {
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.types-goods  li:nth-child(1) {
+    padding-top: 20px;
 }
 
 .user-navigation li,
 .site-navigation li,
 .popular-products li {
     list-style: none;
+   
 }
 
 .user-navigation .form-search-text {
@@ -63,6 +84,7 @@ body {
     border: none;
     cursor: pointer;
     background: none;
+    padding: 0 0 2px 0;
 }
 
 .user-navigation a,
@@ -157,12 +179,19 @@ body {
     display: inline;
 }
 
-
-
 /* Стили главной */
 .container {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 1160px;
+}
+
+.products-catalog {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 163px 0;
 }
 
 .products-list a {
@@ -197,9 +226,28 @@ li.products-list:active {
     opacity: 0.2;
 }
 
+.partners {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 107px;
+}
+
 .partners img:hover {
     filter: none;
     opacity: 1.0;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    width: 493px;
+}
+
+.contacts {
+    width: 560px;
 }
 
 .about h2,
@@ -207,10 +255,12 @@ li.products-list:active {
     font-size: 47px;
     line-height: 48px;
     text-transform: none;
+    margin-bottom: 41px;
 }
 
 .about p,
 .contacts p {
+    margin-bottom: 31px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -219,12 +269,21 @@ li.products-list:active {
     color: rgb(70, 70, 70)
 }
 
+.maps {
+    margin-top: 40px;
+    margin-bottom: 63px;
+}
+.about-list {
+    margin: 74px 0 44px 35px;
+    padding: 0;
+}
+
 .about-item {
     list-style: none;
     font-size: 16px;
     text-transform: none;
+    padding: 0 0 16px 0;
 }
-
 
 /* Стили каталога */
 .page-title {
@@ -536,6 +595,7 @@ li.products-list:active {
 
 /* Стили footer */
 .main-footer {
+    margin: 80px 0 0 0;
     background: rgb(70, 70, 70);
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -546,9 +606,17 @@ li.products-list:active {
 }
 
 .container-footer {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 1160px;
 }
+
+.footer-top {
+    display: flex;
+    
+}
+
 
 .footer-logo:hover,
 .footer-logo:focus {
@@ -557,6 +625,20 @@ li.products-list:active {
 
 .footer-logo:active {
     opacity: 0.3;
+}
+
+.footer-navigation {
+    display: flex;
+    width: 1160px;
+}
+
+.footer-user-navigation {
+    display: flex;
+    align-self: flex-end;
+}
+
+.footer-site-menu {
+    display: flex;
 }
 
 .footer-user-navigation li,
