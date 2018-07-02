@@ -53,6 +53,11 @@ body {
     line-height: 30px;
     font-weight: 400;
     text-transform: none;
+    margin-bottom: 20px;
+}
+
+.login-link {
+    margin-left: auto;
 }
 
 .site-navigation {
@@ -60,6 +65,10 @@ body {
     width: 1040px;
     margin: 0 auto;
     padding: 0;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-left: auto;
 }
 
 .types-goods  li:nth-child(1) {
@@ -595,13 +604,14 @@ li.products-list:active {
 
 /* Стили footer */
 .main-footer {
-    margin: 80px 0 0 0;
+    width: 1440px;
+    margin: 80px auto 0;
     background: rgb(70, 70, 70);
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 30px;
     font-weight: 300;
-    text-transform: capitalize;
+    text-transform: none;
     color: rgb(255, 255, 255);
 }
 
@@ -614,9 +624,13 @@ li.products-list:active {
 
 .footer-top {
     display: flex;
-    
+    margin-top: 50px;
+    margin-bottom: 9px;
 }
 
+.footer-logo {
+    margin-top: 16px;
+}
 
 .footer-logo:hover,
 .footer-logo:focus {
@@ -634,7 +648,17 @@ li.products-list:active {
 
 .footer-user-navigation {
     display: flex;
-    align-self: flex-end;
+    margin-left: auto;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-middle span {
+    margin-top: -9px;
 }
 
 .footer-site-menu {
@@ -662,6 +686,18 @@ li.products-list:active {
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+.footer-bottom {
+    display: flex;
+}
+
+.footer-social {
+    margin-left: 512px;
+}
+
+.footer-copyright {
+    margin-left: auto;
 }
 
 .footer-user-navigation a:hover,
