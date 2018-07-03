@@ -31,7 +31,7 @@ input[type="radio"].visually-hidden {
 
 body {
     margin: 0;
-    padding: 0 20px 0 20px;
+    padding: 0;
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -310,40 +310,111 @@ li.products-list:active {
 }
 
 /* Стили слайдера */
-.container-slider {
-    width: 1076px;
-    box-sizing: border-box;
-}
-
 .slider {
     position: relative;
 }
+
+.container-slider {
+    position: relative;
+    top: -112px;
+    left: 5px;
+    width: 1076px;
+    height: 490px;
+    margin-bottom: -10px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+.slider-controls {
+    position: absolute;
+    right: -50px;
+    bottom: 160px;
+    width: 93px;
+    height: 12px;
+    transform: translateX(-50%);
+}
+
+.slider-controls i{
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls i::after {
+    content: "";
+    position: absolute;
+    top: px;
+    left: 8px;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+
+}
+
+.slider-controls .active::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
 .slider-list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.slider-item {
+    width: 1076px;
+}
+
+.slider-position {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .slider-item h3 {
-    width: 421px;
+    width: 394px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-right: 87px;
+    margin-bottom: 19px;
     font-size: 47px;
     font-weight: 400;
     line-height: 56px;
     letter-spacing: 0.17px;
+    text-transform: none;
 }
 
 .slider-item p {
     width: 481px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.15px;
     text-transform: none;
+}
+
+.slider-item table {
+    margin-right: 50px;
 }
 
 .slider-item .number-decor{
@@ -364,6 +435,14 @@ li.products-list:active {
     text-transform: none;
 }
 
+.table-slider-one td:nth-child(1) {
+    width: 155px;
+}
+
+.table-slider-one td:nth-child(2) {
+    width: 134px;
+}
+
 .slider-item {
     display: none;
 }
@@ -372,12 +451,17 @@ li.products-list:active {
     display: block;
 }
 
+.slider-item:nth-child(1) {
+    background-image: url("../img/slider-one.png");
+    background-repeat: no-repeat;
+    background-position: 85px 0px;
+}
+
 /* Стили каталога */
 .container-catalog {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 1440px;
 }
 
 .catalog-columns {
@@ -559,6 +643,8 @@ li.products-list:active {
     line-height: 40px;
     width: 220px;
     height: 40px;
+    margin-right: 259px;
+    margin-bottom: 46px;
 }
 
 .button:hover,
@@ -692,7 +778,7 @@ li.products-list:active {
 }
 
 .wrapper-bg {
-    width: 970px;
+    width: 963px;
     background: rgb(235, 235, 235);
 }
 
@@ -805,7 +891,7 @@ li.products-list:active {
 
 /* Стили footer */
 .main-footer {
-    width: 1440px;
+    width: 100%;
     margin: 80px auto 0;
     background: rgb(70, 70, 70);
     font-family: 'Open Sans', sans-serif;
