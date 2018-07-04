@@ -37,18 +37,23 @@
       <section class="slider">
         <div class="container-slider">
           <h2 class="visually-hidden">Какое-то название для баннера</h2>
+          <input id="product-1" class="visually-hidden" type="radio" name="toggle" checked>
+          <input id="product-2" class="visually-hidden" type="radio" name="toggle">
+          <input id="product-3" class="visually-hidden" type="radio" name="toggle">
           <div class="slider-controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
+            <label for="product-1" class="slider-controls-item slider-controls-item--1"></label>
+            <label for="product-2" class="slider-controls-item slider-controls-item--2"></label>
+            <label for="product-3" class="slider-controls-item slider-controls-item--3"></label>
           </div>
           <ul class="slider-list">
             <li class="slider-item">
+              <div class="slider-one-decorative-element"></div>
+              <div class="slider-decorative-element"></div>
               <div class="slider-position">
                 <h3>Делай селфи, как Бен Стиллер! </h3>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.
                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <a class="button button-sllider" href="">Подробнее</a>
+                <a class="button button-sllider" href="#">Подробнее</a>
                 <table class="table-slider-one">
                   <tr>
                     <td class="number-decor">8,5 м</td>
@@ -64,34 +69,42 @@
               </div>
             </li>
             <li class="slider-item">
-                <h3>Худеем правильно!</h3>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
-                  не пропускать занятия и соблюдать диету.</p>
-                <a href="">Подробнее</a>
-              <table class="table-slider-two">
-                <tr>
-                  <td>48 часов</td>
-                </tr>
-                <tr>
-                  <td>Без подзарядки</td>
-                </tr>
-              </table>
+                <div class="slider-two-decorative-element"></div>
+                <div class="slider-decorative-element"></div>
+                <div class="slider-position">
+                  <h3>Худеем правильно!</h3>
+                  <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
+                     не пропускать занятия и соблюдать диету.</p>
+                  <a class="button button-sllider" href="#">Подробнее</a>
+                <table class="table-slider-two">
+                  <tr>
+                    <td class="number-decor">48 часов</td>
+                  </tr>
+                  <tr>
+                    <td class="text-decor">Без подзарядки</td>
+                  </tr>
+                </table>
+              </div>
             </li>
             <li class="slider-item">
-              <h3>Порхает как бабочка, жалит как пчела! </h3>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                <div class="slider-three-decorative-element"></div>
+                <div class="slider-decorative-element"></div>
+              <div class="slider-position">
+                <h3 class="header-width">Порхает как бабочка, жалит как пчела! </h3>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
                   мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="">Подробнее</a>
-              <table>
-                <tr>
-                  <td>800 м</td>
-                  <td>50 м</td>
-                </tr>
-                <tr>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-              </table>
+                <a class="button button-sllider" href="#">Подробнее</a>
+                <table class="table-slider-three">
+                  <tr>
+                    <td class="number-decor">800 м</td>
+                    <td class="number-decor">50 м</td>
+                  </tr>
+                  <tr>
+                    <td class="text-decor">Дальность полета</td>
+                    <td class="text-decor">Радиус поражения</td>
+                  </tr>
+                </table>
+              </div>
             </li>
           </ul>
         </div>
