@@ -1013,6 +1013,7 @@ table.table-slider-three {
 }
 
 .button-filter {
+    margin-top: 2px;
     font-size: 18px;
     text-transform: uppercase;
     line-height: 24px;
@@ -1143,40 +1144,107 @@ table.table-slider-three {
     background: rgb(239, 239, 239);
 }
 
-.filter {
-    margin-left: 180px;
+.filtres-wrapper form {
+    padding: 0;
+    margin: 0;
+    margin-top: 208px;
+    margin-left: 198px;
 }
 
 .filter fieldset {
+    padding: 0;
+    margin: 0;
     border: none;
 }
 
 .filter legend {
+    padding-top: 10px;
+    margin-bottom: 25px;
     font-size: 18px;
-    line-height: 24px;
     text-transform: none;
+    width: 201px;
+    border-top: 2px solid rgb(0, 0, 0);
 }
 
-.filter-option li {
+.filter ul {
+    margin: 0;
+    margin-bottom: 39px;
+    padding: 0;
+}
+
+.filter-option {
     list-style: none;
+    padding-left: 39px;
+    margin-bottom: 16px;
 }
 
 .filter label {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 40px;
     letter-spacing: 1px;
     text-transform: none;
 }
 
-.filter-option input:disabled + label {
-    color: rgba(0, 0, 0, 0.3);
+.filter-option label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
 }
 
 .filter-option input:hover,
 .filter-option input:focus {
     color: rgba(0, 0, 0, 0.6);
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -39px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -35px;
+    width: 23px;
+    height: 17px;
+    background-image: url(../img/checkbox.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    width: 18px;
+    height: 18px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -32px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.filter-option input:disabled + label {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .wrapper-bg {
@@ -1339,7 +1407,8 @@ table.table-slider-three {
     width: 1160px;
 }
 
-.footer-user-navigation {
+.footer-user-navigation,
+.footer-user-navigation-catalog {
     display: flex;
     margin-left: auto;
 }
@@ -1374,6 +1443,36 @@ table.table-slider-three {
     background-position: 0px 4px;
 }
 
+.footer-user-navigation-catalog li:nth-child(1) a {
+    padding-left: 24px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/footer-user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+}
+
+.footer-user-navigation-catalog li:nth-child(2) a {
+    margin-left: 52px;
+    padding-left: 21px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/footer-compare-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+}
+
+
+.footer-user-navigation-catalog li:nth-child(3) a {
+    margin-left: 47px;
+    padding-left: 25px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/footer-cart-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+}
+
 .footer-middle {
     display: flex;
     justify-content: space-between;
@@ -1382,6 +1481,7 @@ table.table-slider-three {
 }
 
 .footer-middle span {
+    font-size: 15px;
     margin-top: -9px;
 }
 
@@ -1399,12 +1499,15 @@ table.table-slider-three {
 
 
 .footer-user-navigation li,
+.footer-user-navigation-catalog li,
 .footer-site-menu li{
     list-style: none;
 }
 
 .footer-user-navigation a,
 .footer-user-navigation span,
+.footer-user-navigation-catalog a,
+.footer-user-navigation-catalog span,
 .user-nav-btn {
     color: rgb(255, 255, 255, 0.7);
     text-decoration: none;
@@ -1454,12 +1557,17 @@ table.table-slider-three {
 .footer-user-navigation a:focus,
 .footer-user-navigation span:hover,
 .footer-user-navigation span:focus,
+.footer-user-navigation-catalog a:hover,
+.footer-user-navigation-catalog a:focus,
+.footer-user-navigation-catalog span:hover,
+.footer-user-navigation-catalog span:focus,
 .user-nav-btn:hover,
 .user-nav-btn:focus {
     color: rgb(255, 255, 255);
 }
 
 .footer-user-navigation a:active,
+.footer-user-navigation-catalog a:active,
 .user-nav-btn:active {
     opacity: 0.3;
 }
