@@ -369,10 +369,12 @@ li.products-list:active {
 }
 
 .about {
+    position: relative;
     width: 493px;
 }
 
 .contacts {
+    position: relative;
     width: 560px;
 }
 
@@ -409,6 +411,26 @@ li.products-list:active {
     font-size: 16px;
     text-transform: none;
     padding: 0 0 16px 0;
+}
+
+.about h2::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 1px;
+    width: 80px;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.contacts h2::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 1px;
+    width: 80px;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
 }
 
 /* Стили слайдера */
@@ -789,6 +811,53 @@ table.table-slider-three {
     background: rgb(0,0,0);
     color: #f7e184;
 }
+
+.service-slider-control::after {
+    content: "";
+    position: absolute;
+    top: -81px;
+    right: -125px;
+    width: 7px;
+    height: 319px;
+    background-color: rgb(0, 0, 0);
+}
+
+.service-slider-list li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -209px;
+    width: 136px;
+    height: 164px;
+    background-image: url(../img/delivery-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.service-slider-list li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: -226px;
+    width: 171px;
+    height: 195px;
+    background-image: url(../img/warranty-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.service-slider-list li:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    right: -217px;
+    width: 171px;
+    height: 195px;
+    background-image: url(../img/credit-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
 
 /* Стили каталога */
 .container-catalog {
@@ -1249,7 +1318,7 @@ table.table-slider-three {
 .footer-top {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 9px;
+    margin-bottom: 24px;
 }
 
 .footer-logo {
@@ -1275,19 +1344,59 @@ table.table-slider-three {
     margin-left: auto;
 }
 
+.footer-user-navigation li:nth-child(1) a {
+    padding-left: 24px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/footer-user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+}
+
+.footer-user-navigation li:nth-child(2) a {
+    margin-left: 47px;
+    padding-left: 21px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/footer-compare-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+}
+
+
+.footer-user-navigation li:nth-child(3) a {
+    margin-left: 47px;
+    padding-left: 25px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/footer-cart-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+}
+
 .footer-middle {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 45px;
 }
 
 .footer-middle span {
     margin-top: -9px;
 }
 
+.footer-menu {
+    margin-left: -30px;
+    width: 440px;
+}
+
 .footer-site-menu {
     display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
 }
+
 
 .footer-user-navigation li,
 .footer-site-menu li{
@@ -1297,7 +1406,7 @@ table.table-slider-three {
 .footer-user-navigation a,
 .footer-user-navigation span,
 .user-nav-btn {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255, 0.7);
     text-decoration: none;
 }
 
@@ -1314,14 +1423,31 @@ table.table-slider-three {
 
 .footer-bottom {
     display: flex;
+    margin-bottom: 43px;
 }
 
 .footer-social {
-    margin-left: 512px;
+    margin: 0px;
+    margin-left: 469px;
+    padding: 0px;
+}
+
+.footer-social ul {
+    display: flex;
+}
+
+.footer-social li {
+    list-style: none;
+    margin-right: 23px;
+}
+
+.footer-social li:last-child {
+    margin-right: 0px;
 }
 
 .footer-copyright {
     margin-left: auto;
+    margin-top: 12px;
 }
 
 .footer-user-navigation a:hover,
@@ -1337,12 +1463,27 @@ table.table-slider-three {
 .user-nav-btn:active {
     opacity: 0.3;
 }
-
+.footer-copyright a:hover,
+.footer-site-menu a:focus,
 .footer-site-menu a:hover,
 .footer-site-menu a:focus {
-    color: rgba(255, 255, 255, 0.6);
+    opacity: 0.6;
 }
 
 .footer-site-menu a:active {
-    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+}
+
+.social-btn {
+    opacity: 0.3;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+    opacity: 1;
+}
+
+.social-btn:active,
+.footer-site-menu a:active {
+    opacity: 0.1;
 }
