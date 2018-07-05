@@ -673,8 +673,8 @@ table.table-slider-three {
 /* Стили второго слайдера */
 .services-slider {
     position: relative;
-    width: 1435px;
-    margin-left: -136px;
+    width: 1424px;
+    margin-left: -133px;
     margin-bottom: 94px;
     height: 288px;
     background-color: #e5e5e5;
@@ -683,13 +683,13 @@ table.table-slider-three {
 .services-slider-container {
     position: relative;
     height: 288px;
-    margin-left: 136px;
+    margin-left: 134px;
     background-color: #e5e5e5;
 }
 
 .service-slider-control {
     position: absolute;
-    top: -19px;
+    top: -21px;
     width: 160px;
     height: 180px;
 }
