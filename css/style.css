@@ -1509,7 +1509,8 @@ table.table-slider-three {
 .footer-user-navigation-catalog a,
 .footer-user-navigation-catalog span,
 .user-nav-btn {
-    color: rgb(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
     text-decoration: none;
 }
 
@@ -1564,6 +1565,7 @@ table.table-slider-three {
 .user-nav-btn:hover,
 .user-nav-btn:focus {
     color: rgb(255, 255, 255);
+    opacity: 1;
 }
 
 .footer-user-navigation a:active,
