@@ -196,6 +196,8 @@ body {
     position: relative;
     top: -19px;
     left: 59px;
+    width: 164px;
+    height: 36px;
 }
 
 .main-header-logo:hover,
